@@ -1,0 +1,219 @@
+/*-------------------------------------
+		CSS Variables
+--------------------------------------*/
+:root {
+    --color-dark-3: #15191e;
+    --color-dark-2: #3f4b5a;
+    --color-dark-1: #697c96;
+    --color-light-3: #ffffff;
+    --color-light-2: #c3cad5;
+    --color-light-1: #8797ab;
+
+}
+
+/* 
+    dark-3 {
+        light-3 {
+            dark-2 {
+                light-2 {
+
+                }
+        }
+    }
+*/
+
+.inside-container {
+    border-radius: var(--bs-border-radius-lg);
+    background-color: var(--color-light-3);
+}
+
+
+/*-------------------------------------
+		1.General css
+--------------------------------------*/
+
+body {
+	font-family: 'Poppins', sans-serif;
+    background-color: var(--color-dark-3);
+}
+
+.title {
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase !important;
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+.border-bottom {
+    border-bottom: 0.2rem solid #c2c2c2 !important;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-dark-2);
+    border-bottom: 0.2rem solid var(--color-dark-2) !important;
+}
+
+@media (min-width: 1700px) {
+    .container {
+        max-width: 1700px;
+    }
+}
+
+/*-------------------------------------
+        Nav Bar - Top Area
+--------------------------------------*/
+.top-area .navbar {
+    background-color: var(--color-light-2)
+}
+.top-area .nav-item a {
+    color: var(--color-dark-2) !important;
+    font-size: 1.5rem;
+}
+
+.top-area .navbar-brand{
+    color: var(--color-dark-2) !important;
+    font-size: 2rem;
+}
+
+/*-------------------------------------
+        Welcome
+--------------------------------------*/
+
+.welcome .container  div {
+    color: var(--color-dark-2);
+}
+
+/*-------------------------------------
+        About
+--------------------------------------*/
+.about .contents .content {
+    background-color: var(--color-dark-2);
+    color: var(--color-light-3) !important;
+    border-radius: var(--bs-border-radius-lg);
+    padding: 1rem;
+}
+
+.about .contents {
+    font-size: 1.5rem;
+}
+
+/*-------------------------------------
+        Education
+--------------------------------------*/
+.education .contents .content {
+    background-color: var(--color-dark-2);
+    color: var(--color-light-3);
+}
+
+/*-------------------------------------
+        Experience
+--------------------------------------*/
+
+.experience .timeline .border-bottom {
+    border-bottom: 0.2rem solid var(--color-light-3) !important;
+}
+
+.experience-content .title-text{
+    color: var(--color-light-3);
+    font-weight: 600;
+    text-transform:capitalize;
+}
+
+.experience .timeline-content .card , .experience .timeline-meta div  {
+    background-color: var(--color-dark-2);
+    color: var(--color-light-3);
+}
+
+.experience .experience-content .experience-list-item {
+    border-radius: var(--bs-border-radius-lg) ;
+    padding: .5rem;
+    margin: 0.8rem 0rem ;
+    background-color: var(--color-light-3);
+    color: var(--color-dark-2)
+}
+
+
+.experience .experience-list-item {
+    font-size: 1.2rem;
+}
+
+.experience .timeline-meta span {
+    padding: 0.3rem 1rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .experience .timeline-meta span {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .experience .experience-content .experience-list-item {
+        margin: 0.5rem 0rem !important;
+        font-size: 1rem;
+    }
+
+   
+
+    .experience .experience-content .title-text {
+        font-size: 1.5rem !important;
+    }
+}
+
+/*-------------------------------------
+        Skills
+--------------------------------------*/
+.skills .skill-heading {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: var(--color-dark-2);
+}
+
+.skills .skill-content {
+    margin: 1rem 0rem;
+}
+
+.skills .skill-content .skill-types {
+    margin: 0rem 1rem;
+    font-size: 1.2rem;
+    border-radius: var(--bs-border-radius-xl);
+    padding: 0.2rem 1rem;
+}
+
+.skills .skill-content-even .skill-types {
+    color: var(--color-dark-3);
+    background-color: var(--color-light-1);
+}
+
+.skills .skill-content-odd .skill-types {
+    color: var(--color-light-3);
+    background-color: var(--color-dark-2);
+}
+
+.skills .skill-content {
+    background-color: var(--color-light-2);
+    text-align: left;
+    padding: 0.8rem;
+    div {
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills .skill-heading {
+        font-size: 1.5rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
